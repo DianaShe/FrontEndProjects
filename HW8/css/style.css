@@ -1,0 +1,117 @@
+@import url('./vars.css');
+@import url('./normalize.css');
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: var(--main-font-size);
+}
+
+h1, p {
+    margin: 0;
+}
+
+.header {
+    background-color: var(--header-color);
+    color: var(--accent-color);
+    padding: 19px 0 12px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 534px;
+}
+
+.header_title {
+    text-align: center;
+    font-size: 24px;
+}
+
+.header_text {
+    text-align: center;
+    font-size: 16px;
+}
+
+.main {
+    height: 100vh;
+    background-color: var(--main-background-color);
+}
+
+.shopping_list {
+    color: #fff;
+    margin-bottom: 45px;
+}
+
+.list_item {
+    display: flex;
+    align-items: center;
+    padding: 11px 12px 13px;
+    background-color: var(--item-backgroun-light);
+}
+
+.list_item:nth-child(2n) {
+    background-color: var(--item-backgroun-dark);
+}
+
+.list_item input {
+    display: none;
+}
+
+.list_item span {
+    width: 19px;
+  height: 19px;
+  background-color: #fff;
+  display: inline-block;
+  margin-right: 16px;
+  position: relative;
+  transition: all .1s ease-in;
+}
+
+.list_item input:checked + span::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  width: 3px;
+  height: 6px;
+  border: solid #000000;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.list_item input:checked ~ p {
+    text-decoration: line-through;
+    color: #9B96AC;
+}
+
+.list_item:hover {
+    cursor: pointer;
+    background-color: #625E77;
+    border-top: solid 2px #fff;
+    border-bottom: solid 2px #fff;
+}
+
+.list_item:active {
+    background-color: var(--accent-color);
+}
+
+.list_item_text {
+    margin-left: 3px;
+    font-size: 11px;
+}
+
+.list_item_text::before {
+    content: "(";
+}
+
+.list_item_text::after {
+    content: ")";
+}
+
+.bottom_button {
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: var(--header-color);
+    color: var(--accent-color);
+    border: none;
+}
