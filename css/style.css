@@ -2,116 +2,166 @@
 @import url('./normalize.css');
 
 body {
-    font-family: Roboto, sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: var(--main-font-size);
 }
 
-h1, p {
+h1, h2, h3, h4, p {
     margin: 0;
 }
 
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
 .header {
-    background-color: var(--header-color);
-    color: var(--accent-color);
-    padding: 19px 0 12px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    margin-bottom: 70px;
 }
 
 .container {
     margin: 0 auto;
-    width: 534px;
+    width: 1200px;
 }
 
-.header_title {
-    text-align: center;
-    font-size: 24px;
+.flex_container {
+    display:flex;
+    justify-content: space-between;
 }
 
-.header_text {
-    text-align: center;
-    font-size: 16px;
+.nav {
+    display: flex;
+    gap:20px;
+    align-items: center;
+}   
+
+.nav_link {
+    color: var(--text-color);
 }
 
-.main {
-    height: 100vh;
-    background-color: var(--main-background-color);
+.nav_link:active, 
+.nav_link:hover {
+    color: var(--accent-color);
 }
 
-.shopping_list {
+.button {
+    padding: 13px 26px;
+    font-weight: 600;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    background-color: inherit;
+}
+
+.button_wrapper > .button:first-child {
+    margin-right: 32px;
+}
+
+.filled,
+.button:hover {
+    background-color: var(--accent-color);
     color: #fff;
-    margin-bottom: 45px;
+    border: none;
 }
 
-.list_item {
+.hero,
+.benefits {
     display: flex;
     align-items: center;
-    padding: 11px 12px 13px;
-    background-color: var(--item-backgroun-light);
+    margin-bottom: 100px;
 }
 
-.list_item:nth-child(2n) {
-    background-color: var(--item-backgroun-dark);
+.hero_text_wrapper {
+    width: 500px;
+    margin-right: 56px;
 }
 
-.list_item input {
-    display: none;
+.hero_title {
+    font-size: 44px;
+    margin-bottom: 30px;
 }
 
-.list_item span {
-    width: 19px;
-  height: 19px;
-  background-color: #fff;
-  display: inline-block;
-  margin-right: 16px;
-  position: relative;
-  transition: all .1s ease-in;
+.hero_text {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.55;
 }
 
-.list_item input:checked + span::after {
-  content: '';
-  position: absolute;
-  top: 4px;
-  left: 6px;
-  width: 3px;
-  height: 6px;
-  border: solid #000000;
-  border-width: 0 3px 3px 0;
-  transform: rotate(45deg);
+.hero_picture {
+    width: 644px;
+    height: 495px;
+    background: url(../img/image.png) no-repeat center, url(../img/Oval.png) no-repeat center;
 }
 
-.list_item input:checked ~ p {
-    text-decoration: line-through;
-    color: #9B96AC;
+.features {
+    margin-bottom: 100px;
+    text-align: center;
 }
 
-.list_item:hover {
-    cursor: pointer;
-    background-color: #625E77;
-    border-top: solid 2px #fff;
-    border-bottom: solid 2px #fff;
+.features_container {
+    padding-bottom: 74px;
+    background: linear-gradient(#fff4e500, #ffe5d2b9);
+    border-bottom-left-radius: 50% 75%;
+    border-bottom-right-radius: 50% 75%;
+}   
+
+.features_title {
+    margin: 0 auto 50px;
+    text-align: center;
+    width: 539px;
+    font-size: 36px;
 }
 
-.list_item:active {
-    background-color: var(--accent-color);
+.features_list {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 60px;
 }
 
-.list_item_text {
-    margin-left: 3px;
-    font-size: 11px;
+.features_item {
+    width: 270px;
+    text-align: start;
 }
 
-.list_item_text::before {
-    content: "(";
+.features_icon {
+    margin-bottom: 30px;
 }
 
-.list_item_text::after {
-    content: ")";
+.features_item_title {
+    margin-bottom: 16px;
+    font-size: 22px;
+    font-weight: 600;
 }
 
-.bottom_button {
-    width: 100%;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    background-color: var(--header-color);
-    color: var(--accent-color);
-    border: none;
+.features_item_text {
+    line-height: 1.55;
+}
+
+.benefits_text_wrapper {
+    width: 525px;
+    margin-right: 113px;
+    line-height: 1.55;
+}
+
+.benefits_title {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.benefits_list {
+    margin-top: 40px;
+}
+
+.benefits_list_item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.item_title {
+    margin-bottom: 10px;
 }
