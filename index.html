@@ -3,258 +3,127 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Productly</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <title>Weather Forcast</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./img/icons8-weather-32.png" type="image/x-icon" />
   </head>
   <body>
-    <div class="container">
-      <header class="header">
-        <div class="flex_container">
-          <div class="logo"><img src="./img/Logo.png" alt="Productly" /></div>
-          <ul class="nav">
-            <li><a class="nav_link" href="">Products</a></li>
-            <li><a class="nav_link" href="">Customers</a></li>
-            <li><a class="nav_link" href="">Pricing</a></li>
-            <li><a class="nav_link" href="">Resources</a></li>
-          </ul>
-          <div class="button_wrapper">
-            <button class="button" type="button">Sign In</button>
-            <button class="button filled" type="button">Sign Up</button>
-          </div>
-        </div>
-      </header>
-    </div>
-    <div class="container">
-      <main class="main">
-        <section class="section">
-          <div class="text_wrapper">
-            <h1 class="hero_title">The Design Thinking superpowers</h1>
-            <p class="hero_text">
-              Tools, tutorials, design and innovation experts, all in one place!
-              The most intuitive way to imagine your next user experience.
-            </p>
-            <button class="button filled" type="button">Get Started</button>
-          </div>
-          <div class="hero_picture"></div>
-        </section>
-        <section class="features">
-          <h2 class="features_title">
-            We design tools to unveil your superpowers
+    <main class="container">
+      <div class="weather">
+        <div class="content_wrapper">
+          <h2 class="weather_title">
+            CSS Weather Forecast <i class="wi wi-sunrise"></i>
           </h2>
-          <div class="features_container">
-            <ul class="features_list">
-              <li class="features_item">
-                <img
-                  class="features_icon"
-                  src="./img/icon-arrow.png"
-                  alt="Arrow"
-                />
-                <h3 class="features_item_title">First click tests</h3>
-                <p class="features_item_text">
-                  While most people enjoy casino gambling.
-                </p>
-              </li>
-              <li class="features_item">
-                <img
-                  class="features_icon"
-                  src="./img/icon-chart.png"
-                  alt="Chart"
-                />
-                <h3 class="features_item_title">Design surveys</h3>
-                <p class="features_item_text">
-                  Sports betting, lottery and bingo playing for the fun.
-                </p>
-              </li>
-              <li class="features_item">
-                <img
-                  class="features_icon"
-                  src="./img/icon-heart.png"
-                  alt="Heart"
-                />
-                <h3 class="features_item_title">Preference tests</h3>
-                <p class="features_item_text">
-                  The Myspace page defines the individual.
-                </p>
-              </li>
-              <li class="features_item">
-                <img
-                  class="features_icon"
-                  src="./img/icon-time.png"
-                  alt="Time"
-                />
-                <h3 class="features_item_title">Five second tests</h3>
-                <p class="features_item_text">
-                  Personal choices and the overall personality of the person.
-                </p>
-              </li>
-            </ul>
-            <button type="button" class="button filled">Sign up Now</button>
-          </div>
-        </section>
-
-        <section class="section">
-          <div class="text_wrapper">
-            <p>Effortless Validation for</p>
-            <h2 class="section_title">Design Professionals</h2>
-            <p>
-              The Myspace page defines the individual, his or her
-              characteristics, traits, personal choices and the overall
-              personality of the person.
-            </p>
-            <ul class="section_list">
-              <li class="list_item">
-                <h4 class="item_title">Accessory makers</h4>
-                <p>
-                  While most people enjoy casino gambling, sports betting,
-                  lottery and bingo playing for the fun
-                </p>
-              </li>
-              <li class="list_item">
-                <h4 class="item_title">Alterationists</h4>
-                <p>
-                  If you are looking for a new way to promote your business that
-                  won’t cost you more money,
-                </p>
-              </li>
-              <li class="list_item">
-                <h4 class="item_title">Custom Design designers</h4>
-                <p>
-                  If you are looking for a new way to promote your business that
-                  won’t cost you more money,
-                </p>
-              </li>
-            </ul>
-          </div>
-          <div class="benefits_picture">
-            <img
-              src="./img/Image-benefits.png"
-              height="573px"
-              alt="Man in red T-shirt"
-            />
-          </div>
-        </section>
-        <section class="section">
-          <div>
-            <img src="./img/Image-product.png" alt="Man in blue T-shirt" />
-          </div>
-          <div class="text_wrapper">
-            <p>Easier decision making for</p>
-            <h2 class="section_title">Product Managers</h2>
-            <p>
-              The Myspace page defines the individual, his or her
-              characteristics, traits, personal choices and the overall
-              personality of the person.
-            </p>
-            <ul class="section_list">
-              <li class="flex_container list_item">
-                <span><img src="./img/icon-tick.png" alt="Tick" /></span>
-                <p class="product_item_text">
-                  Never worry about overpaying for your energy bill again.
-                </p>
-              </li>
-              <li class="flex_container list_item">
-                <span><img src="./img/icon-tick.png" alt="Tick" /></span>
-                <p class="product_item_text">
-                  We will only switch you to energy companies that we trust and
-                  will treat you right.
-                </p>
-              </li>
-              <li class="flex_container list_item">
-                <span><img src="./img/icon-tick.png" alt="Tick" /></span>
-                <p class="product_item_text">
-                  We track the markets daily and know where the savings are.
-                </p>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="section">
-          <div class="text_wrapper">
-            <p>Optimisation for</p>
-            <h2 class="section_title">Marketers</h2>
-            <p>
-              Few would argue that, despite the advancements of feminism over
-              the past three decades, women still face a double standard when it
-              comes to their behavior.
-            </p>
-            <ul class="section_list">
-              <li class="list_item">
-                <h4 class="item_title">Accessory makers</h4>
-                <p>
-                  While most people enjoy casino gambling, sports betting,
-                  lottery and bingo playing for the fun
-                </p>
-              </li>
-              <li class="list_item">
-                <h4 class="item_title">Alterationists</h4>
-                <p>
-                  If you are looking for a new way to promote your business that
-                  won’t cost you more money,
-                </p>
-              </li>
-              <li class="list_item">
-                <h4 class="item_title">Custom Design designers</h4>
-                <p>
-                  If you are looking for a new way to promote your business that
-                  won’t cost you more money,
-                </p>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <img
-              src="./img/Image-marketer.png"
-              height="610px"
-              alt="Man in red T-shirt"
-            />
-          </div>
-        </section>
-      </main>
-    </div>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="flex_container">
-          <div class="logo"><img src="./img/Logo.png" alt="Productly" /></div>
-          <div class="flex_column">
-            <h4 class="footer_title">Quick Links</h4>
-            <ul>
-              <li class="footer_list_item">About Us</li>
-              <li class="footer_list_item">Blog</li>
-              <li class="footer_list_item">Contact</li>
-              <li class="footer_list_item">FAQ</li>
-            </ul>
-          </div>
-          <div class="flex_column">
-            <h4 class="footer_title">Legal Stuff</h4>
-            <ul>
-              <li class="footer_list_item">Disclaimer</li>
-              <li class="footer_list_item">Financing</li>
-              <li class="footer_list_item">Privacy Policy</li>
-              <li class="footer_list_item">Terms of Service</li>
-            </ul>
-          </div>
-          <form action="#" method="get" class="form flex_column">
-            <h4 class="footer_title">
-              Knowing you're always on the best energy deal
-            </h4>
-            <input
-              class="input"
-              type="tel"
-              placeholder="Enter your phone Number"
-              name="phone_number"
-            />
-            <button class="button filled" type="submit">Sign Up Now</button>
-          </form>
+          <ul class="cities">
+            <li class="city city_half city_1">
+              <div class="city_wrapper">
+              <h4 class="city_title">Lisbon</h4>
+              <div class="forcast">
+                <p class="temp">21°C </p>
+                <i class="wi wi-day-sunny"></i>
+              </div>
+              
+              </div>
+            </li>
+            <li class="city city_2">
+              <div class="city_wrapper">
+              <h4 class="city_title">Paris</h4>
+              <div class="forcast">
+                <p>11°C </p>
+                <i class="wi wi-night-showers"></i>
+              </div>
+              
+              </div>
+            </li>
+            <li class="city">
+              <div class="city_wrapper">
+              <h4 class="city_title">Belgrade</h4>
+              <div class="forcast">
+                <p>15°C </p>
+                <i class="wi wi-day-cloudy"></i>
+              </div>
+              
+              </div>
+            </li>
+            <li class="city">
+              <div class="city_wrapper">
+              <h4 class="city_title">Venice</h4>
+              <div class="forcast">
+                <p>21°C </p>
+                <i class="wi wi-day-cloudy-high"></i>
+              </div>
+              </div>
+            </li>
+            <li class="city">
+              <div class="city_wrapper">
+              <h4 class="city_title">Tel-Avive</h4>
+              <div class="forcast">
+                <p>32°C </p>
+                <i class="wi wi-hot"></i>
+              </div>
+            </li>
+            <li class="city">
+              <div class="city_wrapper">
+              <h4 class="city_title">Cair</h4>
+              <div class="forcast">
+                <p>21°C </p>
+                <i class="wi wi-day-sunny"></i>
+              </div>
+              
+              </div>
+            </li>
+            <li class="city">
+              <div class="city_wrapper">
+              <h4 class="city_title">New-York</h4>
+              <div class="forcast">
+                <p>21°C </p>
+                <i class="wi wi-day-storm-showers"></i>
+              </div>
+              </div>
+            </li>
+            <li class="city">
+              <div class="city_wrapper">
+              <h4 class="city_title">New-Dehli</h4>
+              <div class="forcast">
+                <p>17°C </p>
+                <i class="wi wi-day-rain-wind"></i>
+              </div>
+              </div>
+            </li>
+            <li class="city city_half">
+              <div class="city_wrapper">
+              <h4 class="city_title">San-Francisco</h4>
+              <div class="forcast">
+                <p>15°C </p>
+                <i class="wi wi-day-cloudy"></i>
+              </div>
+              
+              </div>
+            </li>
+            <li class="city">
+              <div class="city_wrapper">
+              <h4 class="city_title">Tokyo</h4>
+              <div class="forcast">
+                <p>7°C </p>
+                <i class="wi wi-night-clear"></i>
+              </div>
+              
+              </div>
+            </li>
+            <li class="city city_full">
+              <div class="city_wrapper">
+              <h4 class="city_title">Sydney</h4>
+              <div class="forcast">
+                <p>25°C </p>
+                <i class="wi wi-night-partly-cloudy"></i>
+              </div>
+              
+              </div>
+            </li>
+          </ul>
+          <p class="bottom_text">Have a nice day and don't forget umbrella if you are in New Delhi now!</p>
         </div>
       </div>
-    </footer>
+    </main>
   </body>
 </html>
