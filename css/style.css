@@ -1,162 +1,135 @@
 @import url("./vars.css");
 @import url("./normalize.css");
-@import url("./weather-icons.min.css");
-@font-face {
-    font-family: "Lucida Sans Unicode";
-    src: url(../font/l_10646.ttf) format('ttf');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
+html,
 body {
-    font-family: Lucida Sans Unicode, sans-serif;
-  font-size: var(--main-font-size);
-}
-
-h1,
-h2,
-h3,
-h4,
-p {
-  margin: 0;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
+    min-height: 100vh;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    color: #000000;
 }
 
 .container {
-  margin: 0 auto;
-  width: 1440px;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr minmax(300px, auto);
 }
 
-.weather {
-  background: #3399cc;
-  padding-top: 60px;
-  border: 25px solid #2b81ac;
+.header {
+  background: #0b524d ;
+    padding: 14px 0;
 }
 
-.content_wrapper {
-  max-width: 1170px;
-  margin: 0 auto;
-  color: #fff;
+.title {
+    font-family: "Delius Unicase", cursive;
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin-top: 120px;
+    margin-bottom: 80px;
+    text-align: center;
 }
 
-.weather_title {
-  font-size: 21px;
-  font-weight: 400;
-  margin-right: 4px;
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 370px); 
+    gap: 30px;
+    margin: 50px 0;
 }
 
-.cities {
-  max-width: 1170px;
-  margin: 35px auto;
-  border: 2px solid #fff;
-  font-size: 0;
+.gallery_item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.45s linear;
+
 }
 
-.city {
-  display: inline-block;
-  width: 25%;
-  opacity: 0.7;
-  font-size: 22px;
-  border: 2px solid #fff;
-  box-sizing: border-box;
-  padding-top: 26px;
-  padding-bottom: 27px;
-  transition: all 0.1s ease-in;
+.gallery_img {
+  filter: contrast(0.5);
 }
 
-.city:hover {
-  opacity: 1;
-  cursor: pointer;
-}
-
-.city_title {
-  font-weight: 400;
-  margin-bottom: 19px;
-}
-
-.city_wrapper {
-  text-align: center;
-  height: 94px;
-}
-
-.forcast > p,
-.forcast > i {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.forcast > p {
-  margin-right: 12px;
-}
-
-.city_half {
-  width: 50%;
-}
-
-.city_full {
+.item_icon_wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  opacity: 0;
+  transition: all 0.45s linear;
 }
 
-.cities > li:first-child {
-  background-color: #3399cc;
+.icon_cont {
+  height: 40px;
+  width: 40px;
+  background-color: #E0E0E0;
+  border-radius: 8px;
+  opacity: 0.5;
 }
 
-.cities > li:nth-child(2) {
-  background-color: #33cccc;
+.icon_cont:hover {
+  opacity: 1;
 }
 
-.cities > li:nth-child(3) {
-  background-color: #996699;
+.icon {
+  padding: 9px;
 }
 
-.cities > li:nth-child(4) {
-  background-color: #c24747;
+.item_text_wrapper {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  color: #f3f3ed;
+  background: linear-gradient(360deg, #241F24, transparent);
+  opacity: 0;
+  transition: all 0.45s linear;
 }
 
-.cities > li:nth-child(5) {
-  background-color: #e2674a;
+.item_author {
+  font-size: 20px;
 }
 
-.cities > li:nth-child(6) {
-  background-color: #ffcc66;
+.item_date {
+    font-size: 20px;
+    font-weight: 400;
+}
+.gallery_item:hover .gallery_img {
+    filter: none;
 }
 
-.cities > li:nth-child(7) {
-  background-color: #99cc99;
+.gallery_item:hover .item_text_wrapper,
+.gallery_item:hover .item_icon_wrapper {
+  opacity: 1;
 }
 
-.cities > li:nth-child(8) {
-  background-color: #669999;
+.item_col-2 {
+    grid-column: span 2;
 }
 
-.cities > li:nth-child(9) {
-  background-color: #cc6699;
+.item_row-2 {
+    grid-row: span 2;
 }
 
-.cities > li:nth-child(10) {
-  background-color: #339966;
+.gallery_4_rows {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 370px); 
+    gap: 30px;
 }
 
-.cities > li:nth-child(11) {
-  background-color: #666699;
-}
-
-.wi {
-  margin-right: 12px;
-  font-size: 43px;
-}
-
-.wi-sunrise {
-  font-size: 26px;
-}
-
-.bottom_text {
-  margin-bottom: 119px;
-}
