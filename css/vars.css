@@ -1,5 +1,10 @@
 :root {
-    --main-font-family: 'Verdana', 'Geneva', sans-serif;
-    --main-font-size: 22px;
+    --main-font-family: 'PT Sans', sans-serif;
+    --title-font-family: 'Francois One', sans-serif;
+    --subtitle-font-family: 'Farro', sans-serif;
+    --nav-font-family: 'Staatliches',sans-serif;
+    --lang-font-family: "Tourney", sans-serif;
+    --main-text-color: #000000;
+    --main-font-size: 28px;
     --container-width: 1200px;
 }
