@@ -56,7 +56,8 @@ body {
   color: var(--menu-font-color);
 }
 
-.menu_link:hover {
+.menu_link:hover,
+.menu_link:active {
   color: var(--main-font-color);
 }
 
@@ -107,7 +108,8 @@ body {
   color: var(--main-font-color);
 }
 
-.img {
+.img,
+.portfolio_img {
   max-width: var(--container-width);
 }
 
@@ -148,7 +150,7 @@ body {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 97px;
+  gap: 88px;
 }
 
 .skills_name {
@@ -172,7 +174,7 @@ body {
   padding-left: 0;
   list-style: none;
   display: flex;
-  gap: 10px;
+  gap: 8px;
 }
 
 .portfolio_title {
