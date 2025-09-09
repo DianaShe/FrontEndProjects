@@ -31,6 +31,12 @@ body {
   color: var(--main-font-color);
 }
 
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: var(--main-background);
+}
+
 .container {
   max-width: var(--container-width);
   margin: 0 auto;
@@ -50,12 +56,12 @@ body {
   color: var(--menu-font-color);
 }
 
-.menu_link:hover,
-.menu_link:active {
-    color: var(--main-font-color);
+.menu_link:hover {
+  color: var(--main-font-color);
 }
 
 .hero {
+  padding-top: 87px;
   padding-bottom: 104px;
 }
 
