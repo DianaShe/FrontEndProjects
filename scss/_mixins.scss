@@ -1,0 +1,21 @@
+@use "vars" as v;
+
+@mixin title($font-family: v.$title-font-family, $font-size: 34px) {
+  font-family: $font-family;
+  font-size: $font-size;
+
+  @media screen and (max-width: 767px) {
+    font-size: 1.5em;
+  }
+}
+
+@mixin section() {
+  padding-bottom: 104px;
+  padding-top: 120px;
+  text-align: center;
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+}
