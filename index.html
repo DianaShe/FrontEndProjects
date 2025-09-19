@@ -1,57 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Manifest</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="logo">
-                <a href="#">
-                    <img src="./assets/img/logo.svg" alt="Logo Company">
-                </a>
-            </div>
-            <nav class="nav">
+      <div class="logo">
+        <a href="#">
+          <img src="./assets/img/logo.svg" alt="Logo Company" />
+        </a>
+      </div>
+      <nav class="nav">
+        <input type="checkbox" id="nav-burger" class="nav_burger burger" />
+        <label for="nav-burger" class="burger_img"></label>
 
-
-                <input type="checkbox" id="nav-burger" class="nav_burger burger">
-                <label for="nav-burger" class="burger_img"></label>
-
-
-                <ul class="menu">
-                    <li class="menu_item">
-                        <a href="#" class="menu_link">home</a>
-                    </li>
-                    <li class="menu_item">
-                        <a href="#" class="menu_link">about</a>
-                    </li>
-                    <li class="menu_item">
-                        <a href="#" class="menu_link">works</a>
-                    </li>
-                    <li class="menu_item">
-                        <a href="#" class="menu_link">blog</a>
-                    </li>
-                    <li class="menu_item">
-                        <a href="#" class="menu_link">contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="search">
-                <a href="" class="search__link">
-                    <img src="./assets/img/search.svg" alt="Search icon">
-                </a>
-            </div>
+        <ul class="menu">
+          <li class="menu_item">
+            <a href="#" class="menu_link">home</a>
+          </li>
+          <li class="menu_item">
+            <a href="#" class="menu_link">about</a>
+          </li>
+          <li class="menu_item">
+            <a href="#" class="menu_link">works</a>
+          </li>
+          <li class="menu_item">
+            <a href="#" class="menu_link">blog</a>
+          </li>
+          <li class="menu_item">
+            <a href="#" class="menu_link">contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="search">
+        <a href="" class="search__link">
+          <img src="./assets/img/search.svg" alt="Search icon" />
+        </a>
+      </div>
     </header>
     <main>
-        <div class="banner">
-            <h1 class="title_1">Manifest is a newborn theme.
-Clean, simple and fast.</h1>
+      <div class="banner">
+        <h1 class="title_1">
+          Manifest is a newborn theme. Clean, simple and fast.
+        </h1>
+      </div>
+      <div class="blog">
+        <h2 class="title_2">Blog</h2>
+        <div class="post_cont">
+          <div class="post_1">
+            <div class="post_1_desc">
+              <p class="post_1_sub_title">Technology, Interface Design</p>
+
+              <h4 class="post_1_title">
+                Using UX Design to Build a Sustainable Future
+              </h4>
+              <p class="post_1_date">6 May, 2020</p>
+
+              <p class="post_1_text">
+                Transformation has to be driven by everybody, not just by
+                climate groups, and we have a responsibility to use our
+                influence to drive this.
+                <a href="#" class="post_link">
+                  <img src="./assets/img/Arrow 1.svg" alt="arrow" />
+                </a>
+              </p>
+            </div>
+            <div class="post_img">
+              <img src="./assets/img/img1.jpg" alt="Arrow" />
+            </div>
+          </div>
+          <div class="post_1">
+            <div class="post_1_desc">
+              <p class="post_1_sub_title">Technology, Interface Design</p>
+
+              <h4 class="post_1_title">
+                Using UX Design to Build a Sustainable Future
+              </h4>
+              <p class="post_1_date">6 May, 2020</p>
+
+              <p class="post_1_text">
+                Transformation has to be driven by everybody, not just by
+                climate groups, and we have a responsibility to use our
+                influence to drive this.
+                <a href="#" class="post_link">
+                  <img src="./assets/img/Arrow 1.svg" alt="arrow" />
+                </a>
+              </p>
+            </div>
+            <div class="post_img">
+              <img src="./assets/img/img2.jpg" alt="House" />
+            </div>
+          </div>
         </div>
+        <div class="latest">
+          <div class="title_cont">
+            <h3 class="title_3">Latest Posts</h3>
+            <p class="title_sub">
+              View All
+              <a href="#" class="post_link">
+                <img src="./assets/img/Arrow 1.svg" alt="arrow" />
+              </a>
+            </p>
+          </div>
+          <div class="post_cont">
+            <div class="post_2">
+              <div class="post_img">
+                <img src="./assets/img/img3.jpg" alt="Lamp" />
+              </div>
+              <div class="post_2_desc">
+                <div class="post_2_sub_title_cont">
+                  <p class="post_2_sub_title">Interface Design</p>
+                  <p class="post_2_date">8 June, 2020</p>
+                </div>
+
+                <h4 class="post_2_title">UX traffic light colours</h4>
+                <p class="post_2_text">
+                  UI has to make a huge visual difference between warning, an
+                  alert and a success.
+                </p>
+              </div>
+            </div>
+            <div class="post_2">
+              <div class="post_img">
+                <img src="./assets/img/img1.jpg" alt="Arrow" />
+              </div>
+              <div class="post_2_desc">
+                <div class="post_2_sub_title_cont">
+                  <p class="post_2_sub_title">Interface Design</p>
+                  <p class="post_2_date">8 June, 2020</p>
+                </div>
+
+                <h4 class="post_2_title">
+                  Using UX Design to Build a Sustainable Future
+                </h4>
+                <p class="post_2_text">
+                  UI has to make a huge visual difference between warning, an
+                  alert and a success.
+                </p>
+              </div>
+            </div>
+            <div class="post_2">
+              <div class="post_img">
+                <img src="./assets/img/img4.jpg" alt="Arrow" />
+              </div>
+              <div class="post_2_desc">
+                <div class="post_2_sub_title_cont">
+                  <p class="post_2_sub_title">Interface Design</p>
+                  <p class="post_2_date">8 June, 2020</p>
+                </div>
+
+                <h4 class="post_2_title">Creativity vs. UX</h4>
+                <p class="post_2_text">
+                  Is it possible to create a delightful user experience without
+                  following best UX practices?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popular">
+          <div class="title_cont">
+            <h3 class="title_3">The Most Popular</h3>
+            <p class="title_sub">
+              View All
+              <a href="#" class="post_link">
+                <img src="./assets/img/Arrow 1.svg" alt="arrow" />
+              </a>
+            </p>
+          </div>
+          <div class="post_cont">
+            <div class="post_3">
+              <div class="post_img">
+                <img src="./assets/img/img5.jpg" alt="Lamp" />
+              </div>
+              <div class="post_3_desc">
+                <div class="post_3_sub_title_cont">
+                  <p class="post_3_sub_title">Interface Design</p>
+                  <p class="post_3_date">8 June, 2020</p>
+                </div>
+
+                <h4 class="post_3_title">
+                  Mentorship Match — How a simple LinkedIn feature can boost
+                  diversity
+                </h4>
+                <p class="post_3_text">
+                  LinkedIn is on a clear mission to make professionals more
+                  successful by connecting the global workforce and as we
+                  learned — diversity and success go hand in hand
+                </p>
+              </div>
+            </div>
+            <div class="post_3">
+              <div class="post_img">
+                <img src="./assets/img/img6.jpg" alt="Lamp" />
+              </div>
+              <div class="post_3_desc">
+                <div class="post_3_sub_title_cont">
+                  <p class="post_3_sub_title">Interface Design</p>
+                  <p class="post_3_date">8 June, 2020</p>
+                </div>
+
+                <h4 class="post_3_title">Creativity vs. UX</h4>
+                <p class="post_3_text">
+                  Is it possible to create a delightful user experience without
+                  following best UX practices? UI has to make a huge visual
+                  difference between warning, an alert and a success.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn_cont">
+          <button class="btn_load" type="button">Load more</button>
+        </div>
+        <div class="bottom">
+          <h5 class="bottom_title">
+            Full-time UI/UX designer Head of Design at VeronaLabs.com
+           <a href="#" class="post_link">
+                <img class="bottom_icon" src="./assets/img/Arrow 1.svg" alt="arrow" />
+              </a>
+          </h5>
+           
+          <p class="bottom_text">
+            We work with clients around the world from our headquarters in
+            Charleston, South Carolina.
+            <br />
+            <br />
+            We focus on naming, branding, brand narratives, website design and
+            development, and brand experiences.
+          </p>
+        </div>
+      </div>
     </main>
-</body>
+  </body>
 </html>
