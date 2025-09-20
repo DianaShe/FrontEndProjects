@@ -208,22 +208,22 @@ body {
   margin-bottom: 50px;
 }
 
-.post_1, .post_2, .post_3 {
-    margin-bottom: 50px;
-    
-    &_cont {
+.post_1,
+.post_2,
+.post_3 {
+  margin-bottom: 50px;
+
+  &_cont {
     //     display: flex;
     // flex-direction: column;
     // gap: 50px;
     // margin-bottom: 50px;
-    }
+  }
 
-    &_desc {
+  &_desc {
     position: relative;
     margin-bottom: 30px;
-    
-    }
-    
+  }
 
   &_sub_title,
   &_date {
@@ -235,7 +235,6 @@ body {
 
   &_sub_title {
     margin-bottom: 30px;
-
   }
 
   &_date {
@@ -253,9 +252,9 @@ body {
     letter-spacing: 0.1em;
 
     &_cont {
-    display: flex;
-    flex-direction: column;
-    gap:10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
     }
   }
 
@@ -266,8 +265,8 @@ body {
 }
 
 .post_link {
-    display: inline-block;
-    height: 12px;
+  display: inline-block;
+  height: 12px;
   width: 18px;
   position: absolute;
   bottom: 12px;
@@ -275,96 +274,153 @@ body {
   cursor: pointer;
 }
 
-.post_2, .post_3 {
-    &_desc {
-        margin-top: 25px;
-    }
+.post_2,
+.post_3 {
+  &_desc {
+    margin-top: 25px;
+  }
 
-    &_sub_title,
-    &_date {
-        margin: 0;
-    }
+  &_sub_title,
+  &_date {
+    margin: 0;
+  }
 
-    &_sub_title_cont {
+  &_sub_title_cont {
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
-    }
-    
-    &_title {
-        margin-top: 0;
-        margin-bottom: 20px;
-    }
+  }
+
+  &_title {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .post_3 {
-
-    &_sub_title_cont {
+  &_sub_title_cont {
     margin-bottom: 12px;
-    }
-    
-    &_title {
+  }
+
+  &_title {
     font-weight: 600;
-        margin-bottom: 10px;
-    }
+    margin-bottom: 10px;
+  }
 }
 
 .title_3 {
-    @extend %title;
-    font-weight: 600;
-font-size: 28px;
-line-height: 1.29;
+  @extend %title;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.29;
 }
 
 .title_sub {
-    position: relative;
-    line-height: 1.66;
-    letter-spacing: 0.1em;
-    color: $font_color_additional;
-    text-transform: capitalize;
+  position: relative;
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+  color: $font_color_additional;
+  text-transform: capitalize;
 }
 
 .title_cont {
-margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .btn_cont {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .btn_load {
-    margin-bottom: 70px;
-    padding: 10px 45px;
-    border: none;
-    background-color: $font_color_main;
-    color: #fff;
-    font-family: inherit;
-font-weight: 700;
-line-height: 1.66;
-letter-spacing: 0.1em;
+  margin-bottom: 70px;
+  padding: 10px 45px;
+  border: none;
+  background-color: $font_color_main;
+  color: #fff;
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1.66;
+  letter-spacing: 0.1em;
 }
 
 .bottom {
-    padding-bottom: 70px;
+  padding-bottom: 70px;
 
-    &_title {
-        @extend %title;
-        font-weight: 400;
-font-size: 24px;
-line-height: 1.66;
-letter-spacing: 0.1em;
-position: relative;
-margin-bottom: 50px;
-    }
+  &_title {
+    @extend %title;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.66;
+    letter-spacing: 0.1em;
+    position: relative;
+    margin-bottom: 50px;
+  }
 
-    &_text {
-        font-size: 18px;
-line-height: 1.78;
-letter-spacing: 0.05em;
-    }
+  &_text {
+    font-size: 18px;
+    line-height: 1.78;
+    letter-spacing: 0.05em;
+  }
 
-    &_icon {
-        display: block;
+  &_icon {
+    display: block;
+  }
+}
+
+.footer {
+  background-color: #f4f4f4;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+
+  &_title {
+    @extend %title;
+
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 0.05em;
+  }
+
+  &_text {
+    font-size: 18px;
+    line-height: 1.66;
+    letter-spacing: 0.1em;
+    color: $font_color_title;
+
+    &:nth-of-type(1) {
+      margin-bottom: 15px;
     }
+  }
+
+  &_list {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 23px;
+  }
+
+  &_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border: 1px solid $font_color_main;
+  }
+
+  &_link:hover &_icon {
+    fill: #ffffff;
+    stroke: #fff;
+  }
+
+  &_link:hover {
+    background-color: $font_color_main;
+  }
+
+  &_rights {
+    font-size: 16px;
+  }
 }
