@@ -5,6 +5,37 @@
   color: #000;
 }
 
+.post_1_sub_title,
+.post_2_sub_title,
+.post_3_sub_title, .post_1_date,
+.post_2_date,
+.post_3_date {
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  color: #7b7b7b;
+  text-transform: capitalize;
+}
+@media screen and (min-width: 768px) {
+  .post_1_sub_title,
+  .post_2_sub_title,
+  .post_3_sub_title, .post_1_date,
+  .post_2_date,
+  .post_3_date {
+    line-height: 1.4;
+  }
+}
+
+.post_link, .title_link, .bottom_link {
+  position: absolute;
+  display: inline-block;
+  height: 12px;
+  width: 21px;
+  bottom: 3%;
+  right: 3%;
+  cursor: pointer;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -105,23 +136,27 @@ body {
 @media screen and (max-width: 992px) {
   .menu {
     position: absolute;
-    right: 0;
-    top: 70px;
+    right: -100%;
+    top: 74px;
     width: 340px;
+    height: 100%;
     opacity: 0;
     flex-direction: column;
+    justify-content: flex-start;
     z-index: 2;
-    background: #85b4c7;
+    background: #8acdd4;
     padding: 0 0;
-    gap: 0;
+    gap: 10px;
     transition: all 0.5s;
   }
+}
+.menu_item:hover .menu_link {
+  color: #fff;
 }
 @media screen and (max-width: 992px) {
   .menu_item {
     text-align: center;
-    padding: 10px 0;
-    border: 1px solid #e5d9d9;
+    padding: 20px 0;
   }
 }
 .menu_link {
@@ -158,6 +193,7 @@ body {
 @media screen and (max-width: 992px) {
   .burger:checked ~ .menu {
     opacity: 1;
+    right: 0;
   }
   .burger:checked ~ .burger_img {
     transform: rotate(405deg);
@@ -286,26 +322,6 @@ body {
     margin-bottom: 0;
   }
 }
-.post_1_sub_title, .post_1_date,
-.post_2_sub_title,
-.post_2_date,
-.post_3_sub_title,
-.post_3_date {
-  line-height: 1.66;
-  letter-spacing: 0.1em;
-  font-weight: 400;
-  color: #7b7b7b;
-  text-transform: capitalize;
-}
-@media screen and (min-width: 768px) {
-  .post_1_sub_title, .post_1_date,
-  .post_2_sub_title,
-  .post_2_date,
-  .post_3_sub_title,
-  .post_3_date {
-    line-height: 1.4;
-  }
-}
 .post_1_sub_title,
 .post_2_sub_title,
 .post_3_sub_title {
@@ -349,14 +365,10 @@ body {
   letter-spacing: 0.05em;
 }
 
-.post_link, .title_link, .bottom_link {
-  position: absolute;
-  display: inline-block;
-  height: 12px;
-  width: 21px;
-  bottom: 5px;
-  right: 3%;
-  cursor: pointer;
+@media screen and (min-width: 768px) {
+  .post_link {
+    bottom: 1%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -490,6 +502,9 @@ body {
   }
 }
 
+.title_link {
+  bottom: 15%;
+}
 @media screen and (min-width: 768px) {
   .title_link {
     bottom: 40%;
@@ -542,7 +557,12 @@ body {
 }
 .bottom_link {
   left: 0;
-  bottom: -40%;
+  bottom: -10%;
+}
+@media screen and (min-width: 768px) {
+  .bottom_link {
+    bottom: -40%;
+  }
 }
 .bottom_text {
   font-size: 18px;
