@@ -1,0 +1,29 @@
+@use 'vars' as *;
+
+%title {
+    font-family: $font_family_title;
+    color: $font_color_title;
+    
+}
+
+%sub {
+    line-height: 1.66;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    color: $font_color_additional;
+    text-transform: capitalize;
+
+    @media screen and (min-width:768px) {
+    line-height: 1.4;
+  }
+}
+
+%link {
+    position: absolute;
+  display: inline-block;
+  height: 12px;
+  width: 21px;
+  bottom: 3%;
+  right: 3%;
+  cursor: pointer;
+}

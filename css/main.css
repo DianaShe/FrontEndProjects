@@ -1,0 +1,240 @@
+.title_1, .title_2, .title_3 {
+  font-family: "Red Hat Display", sans-serif;
+  color: #000;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+ul,
+ol,
+dl {
+  padding-left: 0;
+  margin: 0 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  color: #565656;
+  min-height: 100vh;
+}
+
+.header,
+.main,
+.footer {
+  padding: 0 calc(50vw - 585px);
+}
+@media screen and (max-width: 1170px) {
+  .header,
+  .main,
+  .footer {
+    padding: 0 calc(50vw - (585px - 12%));
+  }
+}
+@media screen and (max-width: 992px) {
+  .header,
+  .main,
+  .footer {
+    padding: 0 34px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header,
+  .main,
+  .footer {
+    padding: 0 10px;
+  }
+}
+
+.header {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .header {
+    padding-top: 38px;
+    padding-bottom: 38px;
+  }
+}
+
+.title_4 {
+  line-height: 1.5;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+}
+
+.banner {
+  margin-bottom: 70px;
+}
+@media screen and (min-width: 1170px) {
+  .banner {
+    margin-bottom: 90px;
+  }
+}
+.banner img {
+  margin-bottom: 70px;
+}
+@media screen and (min-width: 768px) {
+  .banner img {
+    margin-bottom: 90px;
+  }
+}
+
+.title_1 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.67;
+  letter-spacing: 0.05em;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .title_1 {
+    font-size: 32px;
+    line-height: 1.52;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .title_1 {
+    font-size: 48px;
+    line-height: 1.33;
+    margin-bottom: 70px;
+  }
+}
+
+.title_2 {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .title_2 {
+    font-size: 28px;
+    margin-bottom: 50px;
+  }
+}
+
+.text {
+  margin-top: 20px;
+  line-height: 2;
+  letter-spacing: 0.05em;
+}
+@media screen and (min-width: 768px) {
+  .text {
+    font-size: 19px;
+    line-height: 1.68;
+  }
+}
+
+.post {
+  margin-bottom: 70px;
+}
+@media screen and (min-width: 768px) {
+  .post {
+    margin-bottom: 90px;
+  }
+}
+
+.title_3 {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: 0.05em;
+}
+@media screen and (min-width: 768px) {
+  .title_3 {
+    font-size: 48px;
+    line-height: 1.33;
+  }
+}
+
+.footer {
+  background-color: #f4f4f4;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.footer_text {
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+  color: #000;
+}
+.footer_text:nth-of-type(1) {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .footer_text {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .footer_text_wrapper {
+    text-align: start;
+  }
+}
+.footer_list {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 23px;
+}
+.footer_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border: 1px solid #565656;
+}
+.footer_icon {
+  fill: #565656;
+}
+.footer_link:hover .footer_icon {
+  fill: #fff;
+}
+.footer_link:hover {
+  background-color: #565656;
+}
+.footer_rights {
+  font-size: 16px;
+}
+@media screen and (min-width: 768px) {
+  .footer_rights {
+    font-size: 12px;
+    line-height: 1.66;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .flex_cont {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+}/*# sourceMappingURL=main.css.map */
